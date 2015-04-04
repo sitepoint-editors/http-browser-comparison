@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>HTTP demo</title>
+        <link rel="stylesheet" href="/css/pure.css"/>
+        <link rel="stylesheet" href="/css/grids-responsive.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+    <body>
+        <h1>superagent, axios and XMLHttpRequest</h1>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <table class="pure-table pure-table-horizontal">
+                    <thead>
+                        <tr><th>Library</th><th>Request</th><th>Test</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>axios</td>
+                            <td>POST /orders</td>
+                            <td>
+                                <button type="button" id="axiosPost" class="pure-button pure-button-primary">Click me!</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>XMLHttpRequest</td>
+                            <td>POST /orders</td>
+                            <td><button type="button" id="xhrPost" class="pure-button pure-button-primary">Click me!</button></td>
+                        </tr>
+                        <tr>
+                            <td>superagent</td>
+                            <td>POST /orders</td>
+                            <td><button type="button" id="superagentPost" class="pure-button pure-button-primary">Click me!</button></td>
+                        </tr>
+                        <tr>
+                            <td>axios</td>
+                            <td>GET /orders?start=2015-04-22&end=2015-04-29</td>
+                            <td>
+                                <button type="button" id="axiosGet" class="pure-button pure-button-primary">Click me!</button>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>XMLHttpRequest</td>
+                            <td>GET /orders?start=2015-04-22&end=2015-04-29</td>
+                            <td><button type="button" id="xhrGet" class="pure-button pure-button-primary">Click me!</button></td>
+                        </tr>
+                        <tr>
+                            <td>superagent</td>
+                            <td>GET /orders?start=2015-04-22&end=2015-04-29</td>
+                            <td><button type="button" id="superagentGet" class="pure-button pure-button-primary">Click me!</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+                <h2>Response</h2>
+                <div id="result"></div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
